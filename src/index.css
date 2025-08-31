@@ -576,6 +576,10 @@
     right: calc(var(--spacing) * -12);
   }
 
+  button {
+    cursor: pointer;
+  }
+
   .right-0 {
     right: calc(var(--spacing) * 0);
   }

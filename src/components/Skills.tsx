@@ -9,14 +9,19 @@ export function Skills() {
     "TypeScript",
     "Redux Toolkit",
     "React Query",
+    "Node.js",
+    "Express.js",
+    "Restful APIs",
+    "Zod",
     "Jest",
     "RTL",
     "i18n",
     "A11y",
     "Design Systems",
     "Storybook",
-    "Node.js",
+    "PostgreSQL",
     "MongoDB",
+    "Redis",
     "Vite",
     "Webpack",
     "MSW",
@@ -30,7 +35,7 @@ export function Skills() {
     "Kubernetes",
     "Helm",
     "Azure Active Directory",
-    "Keycloak (OIDC/PKCE)",
+    "Keycloak (OIDC/PKCE/OAuth2/JWT/JWKS)",
     "OWASP",
     "SonarQube",
     "Fortify",
@@ -44,7 +49,7 @@ export function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-            Focused on frontend excellence with pragmatic DevOps and strong
+            Focused on Full-Stack excellence with pragmatic DevOps and strong
             security governance.
           </p>
         </div>
@@ -54,7 +59,7 @@ export function Skills() {
           <Card className="border border-border shadow-sm">
             <CardHeader>
               <CardTitle className="text-xl font-semibold text-foreground">
-                Core Frontend
+                Core Technologies
               </CardTitle>
             </CardHeader>
             <CardContent>

@@ -190,10 +190,10 @@ export function Header() {
           <div className="fixed top-16 left-0 right-0 bg-surface border-b border-border shadow-lg">
             <nav className="px-4 py-6 space-y-4">
               <button
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("case-study")}
                 className="block w-full text-left py-2 text-base font-medium text-foreground"
               >
-                Projects
+                Case Studies
               </button>
               <button
                 onClick={() => scrollToSection("skills")}

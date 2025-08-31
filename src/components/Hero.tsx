@@ -12,8 +12,7 @@ export function Hero() {
 
   const skills = [
     "React/Next.js/TS",
-    "Redux Toolkit/React Query",
-    "Tailwind/MUI/AntD",
+    "Node.js/Express/Zod",
     "Jest/RTL",
     "Azure DevOps/Helm/K8s",
     "OWASP/SonarQube/Fortify",
@@ -35,22 +34,23 @@ export function Hero() {
             {/* Eyebrow with better mobile styling */}
             <div className="inline-flex items-center justify-center lg:justify-start">
               <div className="text-eyebrow bg-surface-secondary/80 backdrop-blur px-4 py-2 rounded-full border border-border/50">
-                Lead Frontend Engineer • React/Next.js • Cloud & DevOps
+                Lead Full-Stack Engineer • Node.js & React • Cloud & DevOps
               </div>
             </div>
 
             {/* Headline with better mobile hierarchy */}
             <div className="space-y-4 sm:space-y-6">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground leading-[1.1] sm:leading-tight">
-                I build <span className="gradient-text">fast, reliable</span>{" "}
-                front-ends with strong tests and safer releases.
+              <h1 className="text-xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-foreground leading-[1.1] sm:leading-tight">
+                I architect &amp; build{" "}
+                <span className="gradient-text">fast, reliable</span> end-to-end
+                solutions with strong tests and safer releases.
               </h1>
 
               {/* Supporting copy with mobile-optimized spacing */}
               <p className="text-base sm:text-lg md:text-xl text-foreground-secondary max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                9+ years crafting production-ready React applications. TDD
-                advocate (90%+ coverage), CI/CD specialist (~30% faster
-                deployments), security-focused (~25% fewer escaped defects).
+                9+ years crafting production-ready web application. TDD advocate
+                (90%+ coverage), CI/CD specialist (~30% faster deployments),
+                security-focused (~25% fewer escaped defects).
                 <br className="hidden sm:inline" />
                 <span className="block sm:inline mt-2 sm:mt-0">
                   Based in Kuala Lumpur.
@@ -62,7 +62,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
-                onClick={() => scrollToSection("projects")}
+                onClick={() => scrollToSection("case-study")}
                 className="text-base px-8 py-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full sm:w-auto"
               >
                 View Case Studies

@@ -277,7 +277,7 @@ export function CaseStudyModal({
                   className="text-xs sm:text-sm"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2" />
-                  <span className="hidden sm:inline">Back to Projects</span>
+                  <span className="hidden sm:inline">Back to Case Studies</span>
                   <span className="sm:hidden">Back</span>
                 </Button>
                 {caseStudy.link !== "#" && (
