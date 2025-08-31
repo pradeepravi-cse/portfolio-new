@@ -19,6 +19,7 @@ export function Skills() {
     "MongoDB",
     "Vite",
     "Webpack",
+    "MSW",
   ];
 
   const platformSkills = [

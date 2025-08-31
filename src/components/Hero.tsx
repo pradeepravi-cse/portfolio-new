@@ -71,7 +71,7 @@ export function Hero() {
                 variant="outline"
                 size="lg"
                 onClick={() => scrollToSection("contact")}
-                className="text-base px-8 py-6 w-full sm:w-auto border-2 hover:bg-surface-secondary/50"
+                className="text-base px-8 py-6 w-full sm:w-auto border-2 hover:bg-surface-secondary/50 hover:text-white"
               >
                 Get in touch
               </Button>

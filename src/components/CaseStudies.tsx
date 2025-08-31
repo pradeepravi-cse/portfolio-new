@@ -85,21 +85,6 @@ export function CaseStudies() {
       link: "#",
     },
     {
-      id: "keycloak-sso",
-      eyebrow: "Identity & Access Management",
-      title: "Organization-wide SSO with Keycloak",
-      description:
-        "Centralized identity using Keycloak (OIDC/PKCE) to unify login, roles/claims, and user lifecycle—single source of truth across apps.",
-      bullets: [
-        "Single sign-on across products with branded login and single logout (SLO)",
-        "Faster onboarding/offboarding; fewer access-related tickets",
-        "Unified roles/claims for cleaner authorization and audits",
-      ],
-      tags: ["Keycloak", "OIDC", "PKCE", "SSO", "RBAC", "MFA", "SLO"],
-      link: "#",
-    },
-
-    {
       id: "code-quality-standards",
       eyebrow: "Engineering Governance",
       title: "Code quality & standardization",
@@ -116,7 +101,6 @@ export function CaseStudies() {
         "TypeScript",
         "PR templates",
         "Conventional Commits",
-        "SemVer",
         "Release Train",
       ],
       link: "#",
@@ -139,7 +123,6 @@ export function CaseStudies() {
         "ROI",
         "Change Request",
         "Templates",
-        "Playbooks",
       ],
       link: "#",
     },
@@ -211,7 +194,7 @@ export function CaseStudies() {
       technologies: [
         {
           category: "Testing Framework",
-          items: ["Jest", "React Testing Library", "Cypress", "MSW"],
+          items: ["Jest", "React Testing Library", "MSW"],
         },
         {
           category: "Quality Gates",
@@ -219,13 +202,14 @@ export function CaseStudies() {
         },
         {
           category: "Security",
-          items: ["Fortify SAST", "Nexus OSS", "OWASP", "Snyk"],
+          items: ["Fortify SAST", "Nexus OSS", "OWASP"],
         },
         {
           category: "CI/CD",
           items: [
             "GitHub Actions",
             "Azure DevOps",
+            "Gitlab CI",
             "Branch Protection",
             "PR Templates",
           ],
@@ -244,7 +228,6 @@ export function CaseStudies() {
       tags: [
         "Jest",
         "React Testing Library",
-        "Cypress",
         "OWASP",
         "SonarQube",
         "Fortify",
@@ -265,9 +248,8 @@ export function CaseStudies() {
         "Built React (Vite) and Next.js variants with app shell, error boundaries, suspense",
         "State (RTK) + data (React Query) presets with retry/backoff and cache keys",
         "Keycloak auth wiring (provider, route guards, token refresh helpers)",
-        "Quality defaults: ESLint/Prettier, TS strict, Jest/RTL, Cypress smoke, bundle guardrails",
+        "Quality defaults: ESLint/Prettier, TS strict, Jest/RTL",
         "CI templates (build/test/scan), SonarQube/Fortify/Nexus jobs, env schema validation (Zod)",
-        '"create-org-app" CLI and complete README/playbooks',
       ],
       results: [
         {
@@ -298,7 +280,7 @@ export function CaseStudies() {
         },
         {
           category: "State & Data",
-          items: ["Redux Toolkit", "React Query", "Zustand", "Axios"],
+          items: ["Redux Toolkit", "React Query", "Axios"],
         },
         {
           category: "Development Tools",
@@ -382,7 +364,7 @@ export function CaseStudies() {
         },
         {
           category: "Integration",
-          items: ["CORS", "SLO", "SCIM", "LDAP"],
+          items: ["CORS", "SLO", "LDAP"],
         },
         {
           category: "Management",
@@ -532,7 +514,7 @@ export function CaseStudies() {
         },
         {
           category: "Modeling",
-          items: ["Excel", "Google Sheets", "Power BI", "Tableau"],
+          items: ["Excel", "Google Sheets"],
         },
         {
           category: "Collaboration",
@@ -598,7 +580,7 @@ export function CaseStudies() {
   };
 
   return (
-    <section id="projects" className="py-20">
+    <section id="case-study" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
