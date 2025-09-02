@@ -10,6 +10,7 @@ export function Skills() {
     "Redux Toolkit",
     "React Query",
     "Node.js",
+    "NestJs",
     "Express.js",
     "Restful APIs",
     "Zod",

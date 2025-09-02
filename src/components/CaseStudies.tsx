@@ -55,13 +55,14 @@ export function CaseStudies() {
       description:
         "Led the architecture of a scalable microservices platform, improving system performance by 50% and helping to secure 5+ new client projects.",
       bullets: [
-        "Node.js backend with PostgreSQL/MongoDB",
+        "Nest.js backend with PostgreSQL/MongoDB",
         "React frontend with robust API integration",
         "Azure, Docker, and Kubernetes for CI/CD",
       ],
       tags: [
         "Microservices",
-        "Node.js",
+        "NestJs",
+        "Express",
         "React",
         "Azure",
         "Kubernetes",
@@ -239,7 +240,7 @@ export function CaseStudies() {
         },
         {
           category: "Backend",
-          items: ["Node.js", "Express.js", "Zod"],
+          items: ["NestJs", "Express.js", "Zod"],
         },
         {
           category: "Databases",
@@ -261,7 +262,8 @@ export function CaseStudies() {
       ],
       tags: [
         "Microservices",
-        "Node.js",
+        "NestJs",
+        "Express",
         "React",
         "Azure",
         "Kubernetes",
