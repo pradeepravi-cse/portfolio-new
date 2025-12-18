@@ -13,6 +13,7 @@ interface CaseStudyData {
   bullets: string[];
   tags: string[];
   link: string;
+  status?: "in-progress" | "completed";
 }
 
 interface DetailedCaseStudy {
@@ -39,6 +40,7 @@ interface DetailedCaseStudy {
   tags: string[];
   images?: string[];
   link: string;
+  status?: "in-progress" | "completed";
 }
 
 export function CaseStudies() {
@@ -74,6 +76,7 @@ export function CaseStudies() {
         "TypeORM",
       ],
       link: "#",
+      status: "in-progress",
     },
     {
       id: "slamint-microservices",
@@ -99,6 +102,7 @@ export function CaseStudies() {
         "SonarQube",
       ],
       link: "#",
+      status: "in-progress",
     },
     {
       id: "full-stack-architecture",
@@ -332,6 +336,7 @@ export function CaseStudies() {
         "CloudWatch",
       ],
       link: "#",
+      status: "in-progress",
     },
     {
       id: "slamint-microservices",
@@ -473,6 +478,7 @@ export function CaseStudies() {
         "Monorepo",
       ],
       link: "#",
+      status: "in-progress",
     },
     {
       id: "shift-left-testing",
@@ -810,7 +816,17 @@ export function CaseStudies() {
                 onClick={() => handleCardClick(study.id)}
               >
                 <CardHeader>
-                  <div className="text-eyebrow mb-2">{study.eyebrow}</div>
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="text-eyebrow">{study.eyebrow}</div>
+                    {study.status === "in-progress" && (
+                      <Badge
+                        variant="secondary"
+                        className="text-xs px-2 py-1 bg-accent-amber/10 text-accent-amber border-accent-amber/20"
+                      >
+                        In Progress
+                      </Badge>
+                    )}
+                  </div>
                   <CardTitle className="text-xl font-semibold text-foreground leading-tight">
                     {study.title}
                   </CardTitle>
@@ -846,7 +862,7 @@ export function CaseStudies() {
 
                   <Button
                     variant="ghost"
-                    className="p-0 h-auto font-medium text-accent hover:text-accent/80 gap-1"
+                    className="p-0 h-auto font-medium text-accent hover:bg-accent/10 hover:text-accent dark:hover:bg-accent/20 dark:hover:text-accent gap-1"
                     onClick={(e) => handleViewDetails(study.id, e)}
                   >
                     View details
@@ -867,7 +883,17 @@ export function CaseStudies() {
               onClick={() => handleCardClick(study.id)}
             >
               <CardHeader>
-                <div className="text-eyebrow mb-2">{study.eyebrow}</div>
+                <div className="flex items-center justify-between mb-2">
+                  <div className="text-eyebrow">{study.eyebrow}</div>
+                  {study.status === "in-progress" && (
+                    <Badge
+                      variant="secondary"
+                      className="text-xs px-2 py-1 bg-accent-amber/10 text-accent-amber border-accent-amber/20"
+                    >
+                      In Progress
+                    </Badge>
+                  )}
+                </div>
                 <CardTitle className="text-xl font-semibold text-foreground leading-tight">
                   {study.title}
                 </CardTitle>
@@ -902,7 +928,7 @@ export function CaseStudies() {
 
                   <Button
                     variant="ghost"
-                    className="p-0 h-auto font-medium text-accent hover:text-accent/80 gap-1"
+                    className="p-0 h-auto font-medium text-accent hover:bg-accent/10 hover:text-accent dark:hover:bg-accent/20 dark:hover:text-accent gap-1"
                     onClick={(e) => handleViewDetails(study.id, e)}
                   >
                     View details

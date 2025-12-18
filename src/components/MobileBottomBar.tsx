@@ -10,11 +10,6 @@ export function MobileBottomBar() {
     }
   };
 
-  const handleDownloadResume = () => {
-    // In a real app, this would download the actual resume PDF
-    console.log("Downloading resume...");
-  };
-
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden">
       <div className="bg-surface/90 backdrop-blur-md border-t border-border px-4 py-3">
@@ -27,11 +22,15 @@ export function MobileBottomBar() {
             <Mail className="w-4 h-4" />
             Contact
           </Button>
-          <Button asChild className="flex-1 gap-2 py-3">
+          <Button
+            asChild
+            className="flex-1 gap-2 py-3 [&_a]:text-primary-foreground dark:[&_a]:text-primary-foreground [&_a_svg]:text-primary-foreground dark:[&_a_svg]:text-primary-foreground"
+          >
             <a
               href={"/resume.pdf"}
               download={`pradeepkumar-senior-full-stack-engineer.pdf`}
               aria-label="Download resume as PDF"
+              className="flex items-center justify-center gap-2"
             >
               <Download className="w-4 h-4" />
               Resume

@@ -89,7 +89,17 @@ export function CaseStudyModal({
           <DialogHeader className="p-4 sm:p-6 pb-4 border-b border-border flex-shrink-0">
             <div className="flex items-start justify-between">
               <div className="space-y-3 flex-1">
-                <div className="text-eyebrow">{caseStudy.eyebrow}</div>
+                <div className="flex items-center justify-between">
+                  <div className="text-eyebrow">{caseStudy.eyebrow}</div>
+                  {caseStudy.status === "in-progress" && (
+                    <Badge
+                      variant="secondary"
+                      className="text-xs px-2 py-1 bg-accent-amber/10 text-accent-amber border-accent-amber/20"
+                    >
+                      In Progress
+                    </Badge>
+                  )}
+                </div>
                 <DialogTitle className="text-xl sm:text-2xl lg:text-3xl font-bold text-foreground leading-tight pr-8">
                   {caseStudy.title}
                 </DialogTitle>

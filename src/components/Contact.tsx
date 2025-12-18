@@ -46,7 +46,7 @@ export function Contact() {
                     <Button
                       variant="ghost"
                       onClick={handleEmailClick}
-                      className="text-foreground-secondary hover:text-accent p-0 h-auto font-normal"
+                      className="text-foreground-secondary hover:bg-accent/10 hover:text-accent dark:hover:bg-accent/20 dark:hover:text-accent p-0 h-auto font-normal"
                     >
                       pradeepravi.cse@gmail.com
                     </Button>
@@ -65,7 +65,7 @@ export function Contact() {
                     <Button
                       variant="ghost"
                       onClick={handleLinkedInClick}
-                      className="text-foreground-secondary hover:text-accent p-0 h-auto font-normal"
+                      className="text-foreground-secondary hover:bg-accent/10 hover:text-accent dark:hover:bg-accent/20 dark:hover:text-accent p-0 h-auto font-normal"
                     >
                       linkedin.com/in/pradeepkumarcse
                     </Button>
@@ -83,7 +83,7 @@ export function Contact() {
                     </h3>
                     <Button
                       variant="ghost"
-                      className="text-foreground-secondary hover:text-accent p-0 h-auto font-normal"
+                      className="text-foreground-secondary hover:bg-accent/10 hover:text-accent dark:hover:bg-accent/20 dark:hover:text-accent p-0 h-auto font-normal"
                     >
                       <a
                         href={"/resume.pdf"}
@@ -96,16 +96,6 @@ export function Contact() {
                       </a>
                     </Button>
                   </div>
-                </div>
-              </div>
-
-              {/* Additional note */}
-              <div className="mt-12 text-center">
-                <div className="flex items-center justify-center gap-2 text-foreground-secondary">
-                  <Calendar className="w-4 h-4" />
-                  <span className="text-sm">
-                    Prefer email? Light calendar for quick intro calls.
-                  </span>
                 </div>
               </div>
             </CardContent>

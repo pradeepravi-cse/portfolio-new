@@ -96,7 +96,7 @@ export function Hero() {
             <div className="relative">
               {/* Main avatar tile with enhanced mobile sizing */}
               <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 overflow-hidden rounded-2xl sm:rounded-3xl gradient-bg flex items-center justify-center shadow-2xl border-4 border-surface/20">
-                <img src="/pradeep.png" alt="pk" />
+                <img src="/pradeep.png" alt="Pradeepkumar R - Senior Full-Stack Engineer" />
               </div>
 
               {/* Enhanced glow effects */}
@@ -105,7 +105,7 @@ export function Hero() {
 
               {/* Mobile-specific accent elements */}
               <div className="absolute -top-2 -right-2 w-4 h-4 bg-accent-rose rounded-full animate-pulse sm:hidden" />
-              <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-accent-amber rounded-full animate-pulse delay-1000 sm:hidden" />
+              <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-accent-amber rounded-full animate-pulse sm:hidden" style={{ animationDelay: '1s' }} />
             </div>
           </div>
         </div>

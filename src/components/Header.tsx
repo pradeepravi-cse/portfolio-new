@@ -25,11 +25,6 @@ export function Header() {
     }
   };
 
-  const handleDownloadResume = () => {
-    // In a real app, this would download the actual resume PDF
-    console.log("Downloading resume...");
-  };
-
   return (
     <>
       <header
@@ -46,8 +41,8 @@ export function Header() {
               <div className="w-8 h-8 flex items-center justify-center">
                 <span className="text-sm font-bold text-white">
                   <svg
-                    width="calc(var(--spacing) * 8"
-                    height="calc(var(--spacing) * 8"
+                    width="32"
+                    height="32"
                     viewBox="0 0 73 60"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,8 +68,8 @@ export function Header() {
                         y2="33.9748"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#F59E0B" />
-                        <stop offset="1" stop-color="#F43F5E" />
+                        <stop stopColor="#F59E0B" />
+                        <stop offset="1" stopColor="#F43F5E" />
                       </linearGradient>
                       <linearGradient
                         id="paint1_linear_2600_6"
@@ -84,8 +79,8 @@ export function Header() {
                         y2="36.2342"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#F59E0B" />
-                        <stop offset="1" stop-color="#F43F5E" />
+                        <stop stopColor="#F59E0B" />
+                        <stop offset="1" stopColor="#F43F5E" />
                       </linearGradient>
                       <linearGradient
                         id="paint2_linear_2600_6"
@@ -95,8 +90,8 @@ export function Header() {
                         y2="58.8572"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#F59E0B" />
-                        <stop offset="1" stop-color="#F43F5E" />
+                        <stop stopColor="#F59E0B" />
+                        <stop offset="1" stopColor="#F43F5E" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -137,7 +132,7 @@ export function Header() {
                 onClick={toggleTheme}
                 variant="ghost"
                 size="sm"
-                className="p-2"
+                className="p-2 text-foreground hover:text-foreground dark:hover:text-foreground"
                 aria-label="Toggle theme"
               >
                 {theme === "dark" ? (
@@ -149,7 +144,7 @@ export function Header() {
               <Button
                 variant="outline"
                 size="sm"
-                className="gap-2"
+                className="gap-2 text-[var(--color-white)] dark:text-[var(--color-white)] dark:hover:text-[var(--color-white)]"
                 href="/resume.pdf"
                 asChild
               >
@@ -217,7 +212,7 @@ export function Header() {
                 <Button
                   onClick={toggleTheme}
                   variant="outline"
-                  className="w-full gap-2"
+                  className="w-full gap-2 text-foreground dark:text-foreground dark:hover:text-white"
                 >
                   {theme === "dark" ? (
                     <>
@@ -231,11 +226,15 @@ export function Header() {
                     </>
                   )}
                 </Button>
-                <Button asChild className="w-full gap-2">
+                <Button
+                  asChild
+                  className="w-full gap-2 dark:hover:!text-white dark:!text-white"
+                >
                   <a
                     href={"/resume.pdf"}
                     download={`pradeepkumar-senior-full-stack-engineer.pdf`}
                     aria-label="Download resume as PDF"
+                    className="dark:!hover:!text-white dark:!text-white"
                   >
                     <Download className="w-4 h-4" />
                     Resume
