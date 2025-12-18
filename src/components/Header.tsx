@@ -155,7 +155,7 @@ export function Header() {
               >
                 <a
                   href={"/resume.pdf"}
-                  download={`pradeepkumar-lead-engineer.pdf`}
+                  download={`pradeepkumar-senior-full-stack-engineer.pdf`}
                   aria-label="Download resume as PDF"
                 >
                   <Download className="w-4 h-4" />
@@ -234,7 +234,7 @@ export function Header() {
                 <Button asChild className="w-full gap-2">
                   <a
                     href={"/resume.pdf"}
-                    download={`pradeepkumar-lead-engineer.pdf`}
+                    download={`pradeepkumar-senior-full-stack-engineer.pdf`}
                     aria-label="Download resume as PDF"
                   >
                     <Download className="w-4 h-4" />

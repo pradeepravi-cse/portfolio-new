@@ -3,43 +3,76 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 
 export function Skills() {
-  const coreSkills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Redux Toolkit",
-    "React Query",
+  const backendSkills = [
     "Node.js",
-    "NestJs",
+    "Nest.js",
     "Express.js",
-    "Restful APIs",
-    "Zod",
-    "Jest",
-    "RTL",
-    "i18n",
-    "A11y",
-    "Design Systems",
-    "Storybook",
-    "PostgreSQL",
-    "MongoDB",
-    "Redis",
-    "Vite",
-    "Webpack",
-    "MSW",
+    "REST APIs",
+    "API Design",
+    "Microservices Architecture",
+    "API Gateway Pattern",
+    "NestJS Microservices",
+    "TypeORM",
+    "Zod validation",
+    "Authentication/Authorization flows",
+    "Pino (Structured Logging)",
+    "Distributed Tracing",
+    "Multi-tenancy/Workspace Isolation",
   ];
 
-  const platformSkills = [
-    "Azure DevOps",
-    "Github",
-    "GitLab",
+  const databaseSkills = ["PostgreSQL", "MySQL", "MongoDB", "Redis"];
+
+  const identitySecuritySkills = [
+    "Keycloak",
+    "OAuth2/OIDC",
+    "JWT/JWKS",
+    "PKCE",
+    "RBAC",
+    "CSP",
+    "Audit Logging",
+    "OWASP Secure Coding",
+  ];
+
+  const frontendSkills = [
+    "React",
+    "Next.js",
+    "Redux Toolkit",
+    "React Query",
+    "TanStack Router",
+    "TypeScript",
+    "Storybook",
+    "Vite",
+    "Webpack",
+    "TailwindCSS",
+    "CSS/SCSS",
+    "A11y",
+    "i18n",
+    "UI Architecture",
+    "Scalable Component Systems (Atomic Design)",
+  ];
+
+  const cloudDevOpsSkills = [
+    "AWS: EC2, S3, IAM, VPC, RDS, CloudFront",
+    "Azure: Azure DevOps, AKS, ACR",
     "Docker",
+    "Docker Compose",
     "Kubernetes",
-    "Helm",
-    "Azure Active Directory",
-    "Keycloak (OIDC/PKCE/OAuth2/JWT/JWKS)",
-    "OWASP",
-    "SonarQube",
-    "Fortify",
+    "NGINX Ingress",
+    "CI/CD: Azure DevOps, GitHub Actions",
+    "Observability: Elasticsearch, Fluentd, Kibana, Prometheus, Grafana",
+    "Monorepo: Nx, pnpm Workspace",
+    "Code Quality: SonarQube",
+    "GitOps",
+  ];
+
+  const testingSkills = [
+    "Jest",
+    "React Testing Library",
+    "MSW",
+    "TDD",
+    "Shift-left Testing",
+    "Code Reviews",
+    "Secure Engineering Practices",
   ];
 
   return (
@@ -50,22 +83,22 @@ export function Skills() {
             Skills & Expertise
           </h2>
           <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-            Focused on Full-Stack excellence with pragmatic DevOps and strong
-            security governance.
+            Senior Full Stack Engineer with 9+ years building scalable backend
+            services and high-performance frontend applications.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Core Frontend Card */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Backend & API Development */}
           <Card className="border border-border shadow-sm">
             <CardHeader>
-              <CardTitle className="text-xl font-semibold text-foreground">
-                Core Technologies
+              <CardTitle className="text-lg font-semibold text-foreground">
+                Backend & API Development
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
-                {coreSkills.map((skill, index) => (
+                {backendSkills.map((skill, index) => (
                   <Badge
                     key={index}
                     variant="secondary"
@@ -78,16 +111,104 @@ export function Skills() {
             </CardContent>
           </Card>
 
-          {/* Platform & Governance Card */}
+          {/* Databases */}
           <Card className="border border-border shadow-sm">
             <CardHeader>
-              <CardTitle className="text-xl font-semibold text-foreground">
-                Platform & Governance
+              <CardTitle className="text-lg font-semibold text-foreground">
+                Databases
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
-                {platformSkills.map((skill, index) => (
+                {databaseSkills.map((skill, index) => (
+                  <Badge
+                    key={index}
+                    variant="secondary"
+                    className="text-xs px-3 py-1"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Identity & Security */}
+          <Card className="border border-border shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold text-foreground">
+                Identity & Security
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {identitySecuritySkills.map((skill, index) => (
+                  <Badge
+                    key={index}
+                    variant="secondary"
+                    className="text-xs px-3 py-1"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Frontend Technologies */}
+          <Card className="border border-border shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold text-foreground">
+                Frontend Technologies
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {frontendSkills.map((skill, index) => (
+                  <Badge
+                    key={index}
+                    variant="secondary"
+                    className="text-xs px-3 py-1"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Cloud & DevOps */}
+          <Card className="border border-border shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold text-foreground">
+                Cloud & DevOps
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {cloudDevOpsSkills.map((skill, index) => (
+                  <Badge
+                    key={index}
+                    variant="secondary"
+                    className="text-xs px-3 py-1"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Testing */}
+          <Card className="border border-border shadow-sm">
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold text-foreground">
+                Testing
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {testingSkills.map((skill, index) => (
                   <Badge
                     key={index}
                     variant="secondary"

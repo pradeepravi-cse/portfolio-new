@@ -11,11 +11,11 @@ export function Hero() {
   };
 
   const skills = [
-    "React/Next.js/TS",
-    "Node.js/Express/Zod",
-    "Jest/RTL",
-    "Azure DevOps/Helm/K8s",
-    "OWASP/SonarQube/Fortify",
+    "Node.js/Nest.js/TypeScript",
+    "React/Next.js/Redux",
+    "PostgreSQL/MySQL/MongoDB",
+    "AWS/Azure/Cloud-Native",
+    "Docker/Kubernetes/CI/CD",
   ];
 
   return (
@@ -34,7 +34,7 @@ export function Hero() {
             {/* Eyebrow with better mobile styling */}
             <div className="inline-flex items-center justify-center lg:justify-start">
               <div className="text-eyebrow bg-surface-secondary/80 backdrop-blur px-4 py-2 rounded-full border border-border/50">
-                Lead Full-Stack Engineer • Node.js & React • Cloud & DevOps
+                Senior Full-Stack Engineer • Node.js • TypeScript • React
               </div>
             </div>
 
@@ -48,12 +48,10 @@ export function Hero() {
 
               {/* Supporting copy with mobile-optimized spacing */}
               <p className="text-base sm:text-lg md:text-xl text-foreground-secondary max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                9+ years crafting production-ready web application. TDD advocate
-                (90%+ coverage), CI/CD specialist (~30% faster deployments),
-                security-focused (~25% fewer escaped defects).
+                Senior Full Stack Engineer with 9+ years of experience building scalable backend services and high-performance frontend applications using TypeScript, Node.js, and React. Strong background in designing secure APIs, containerized workloads, and cloud-native architectures across Azure and AWS environments.
                 <br className="hidden sm:inline" />
                 <span className="block sm:inline mt-2 sm:mt-0">
-                  Based in Kuala Lumpur.
+                  Based in Kuala Lumpur, Malaysia.
                 </span>
               </p>
             </div>

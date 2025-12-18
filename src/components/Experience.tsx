@@ -16,34 +16,50 @@ export function Experience() {
   const experiences: ExperienceItem[] = [
     {
       role: "Associate Solution Designer & Senior Software Engineer",
-      company: "Mindgraph Solutions Sdn. Bhd.",
-      period: "Sep 2021 - Present",
+      company: "Mindgraph Solutions Sdn Bhd",
+      period: "09/2021 - Present",
       location: "Kuala Lumpur, Malaysia",
       bullets: [
-        "Led the architecture of full-stack microservices, which improved system scalability by 50% and was a key factor in securing 5+ new client projects.",
-        "Championed a shift-left approach to quality, driving TDD adoption to achieve 90%+ test coverage and cutting post-deployment bugs by 25%.",
-        "Automated end-to-end deployment pipelines using Azure DevOps and Kubernetes, slashing deployment times by 30%.",
-        "Engineered a secure authentication system with Keycloak and embedded SonarQube/Fortify scans into the CI/CD pipeline to ensure OWASP compliance.",
-        "Mentored a team of 15+ engineers, fostering a culture of high-quality code and continuous improvement.",
+        "Designed and implemented scalable backend APIs using Node.js, Nest.js, and TypeScript, enabling secure, reliable, and maintainable service architecture across enterprise applications.",
+        "Built and maintained frontend applications using React and TypeScript, focusing on clean component architecture, performance, and user experience.",
+        "Designed and supported cloud-native service architectures using containerization and core AWS and Azure services, focusing on scalability, security, and operational reliability.",
+        "Applied AWS networking, compute, and storage patterns to support backend service design and deployment workflows.",
+        "Refactored legacy frontends into modular, reusable component libraries using React, React Query, Context API, and TailwindCSS — reducing UI defects by 25% and improving development velocity.",
+        "Contributed to API contract design, data modeling, and service integration to ensure seamless backend-frontend communication.",
+        "Improved performance through caching strategies, bundle optimization, database query tuning, and code-splitting techniques across the stack.",
+        "Integrated Node.js services with PostgreSQL, MySQL, and MongoDB, implementing secure data flows, structured validation, and predictable behavior under load.",
+        "Supported DevOps efforts, including Docker containerization, CI/CD pipelines, Azure DevOps, GitHub Actions, and environment-based deployment workflows.",
+        "Integrated products with a robust logging mechanism using Elasticsearch, Beats, and Kibana.",
+        "Integrated products with OpenTelemetry for active monitoring using Prometheus and Grafana.",
+        "Led cross-functional technical discussions with product managers, designers, and backend engineers to deliver complete end-to-end features.",
+        "Conducted code reviews, mentored engineers, and introduced testing and architectural best practices across teams.",
+        "Experimented with modern frontend tooling and patterns to enhance UI performance and maintainability (React Query, modular service layers, utility-first CSS).",
+        "Drove adoption of AI-driven engineering workflows, including automated PR reviews and test generation, reducing manual effort and improving team efficiency.",
       ],
     },
     {
       role: "Consultant - Technology",
-      company: "Virtusa Consulting Service Pvt. Ltd.",
-      period: "Apr 2020 - Jul 2021",
+      company: "Virtusa Consulting Services Pvt Ltd",
+      period: "04/2020 - 07/2021",
       location: "Chennai, India",
       bullets: [
-        "Developed full-stack features using React for frontend components and Node.js for backend APIs.",
-        "Conducted rigorous code reviews and collaborated with cross-functional teams to align system designs with business needs.",
+        "Developed backend services using Node.js and contributed to full-stack functionality in enterprise banking applications.",
+        "Built responsive frontend modules using React and TypeScript, improving UI consistency and system performance across financial dashboards.",
+        "Worked closely with backend teams to integrate REST APIs, refine data flows, and enhance application reliability.",
+        "Participated in API specification design and implementation across full-stack components.",
+        "Ensured code quality through testing with Jest, code reviews, and CI-based validation.",
+        "Collaborated with design and product teams to deliver scalable features aligned with business and compliance requirements.",
       ],
     },
     {
-      role: "Early Career: Web Development & Design",
-      company: "Capsule8, BlueAlly Infotech, Easton Media",
-      period: "Jul 2016 - Apr 2020",
+      role: "Frontend & Web Design Roles",
+      company: "Multiple Companies",
+      period: "07/2016 - 04/2020",
       location: "Chennai, India",
       bullets: [
-        "Built responsive websites and UI components while contributing to backend API integrations, establishing a strong full-stack foundation early in my career.",
+        "Built responsive web interfaces and reusable UI components using HTML, CSS, JavaScript, and early React patterns.",
+        "Contributed to full-stack features with backend API integrations, laying the foundation for modern full-stack development.",
+        "Improved performance and UX across multiple client websites in Telecom, Media, and Digital Services.",
       ],
     },
   ];
@@ -56,7 +72,7 @@ export function Experience() {
             Experience
           </h2>
           <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-            Building reliable, tested, and secure frontend solutions across
+            Building reliable, tested, and secure full-stack solutions across
             diverse teams and projects.
           </p>
         </div>

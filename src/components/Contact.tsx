@@ -20,8 +20,8 @@ export function Contact() {
             Let's Connect
           </h2>
           <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-            Ready to discuss your next frontend project or explore collaboration
-            opportunities.
+            Ready to discuss your next full-stack project or explore
+            collaboration opportunities.
           </p>
         </div>
 
@@ -87,7 +87,7 @@ export function Contact() {
                     >
                       <a
                         href={"/resume.pdf"}
-                        download={`pradeepkumar-lead-engineer.pdf`}
+                        download={`pradeepkumar-senior-full-stack-engineer.pdf`}
                         aria-label="Download resume as PDF"
                         className="flex gap-1"
                       >

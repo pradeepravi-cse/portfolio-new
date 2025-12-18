@@ -30,7 +30,7 @@ export function MobileBottomBar() {
           <Button asChild className="flex-1 gap-2 py-3">
             <a
               href={"/resume.pdf"}
-              download={`pradeepkumar-lead-engineer.pdf`}
+              download={`pradeepkumar-senior-full-stack-engineer.pdf`}
               aria-label="Download resume as PDF"
             >
               <Download className="w-4 h-4" />
